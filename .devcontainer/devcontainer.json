@@ -1,6 +1,6 @@
 {
     "name": ".NET in Codespaces",
-    "image": "mcr.microsoft.com/dotnet/sdk:9.0",
+    "image": "mcr.microsoft.com/dotnet/sdk:10.0",
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {},
         "ghcr.io/devcontainers/features/github-cli:1": {
@@ -30,25 +30,25 @@
         }
     },
     "forwardPorts": [
-        8080,
-        8081
+        17282,
+        7243
     ],
-    "postCreateCommand": "dotnet new install Aspire.ProjectTemplates && cd ./SampleApp && dotnet restore",
+    "postCreateCommand": "dotnet new install Aspire.ProjectTemplates && dotnet restore",
     "hostRequirements": {
-        "memory": "8gb",
-        "cpus": 4
+        "memory": "4gb",
+        "cpus": 2
     },
     "remoteEnv": {
         "DOTNET_MULTILEVEL_LOOKUP": "0",
-        "TARGET": "net9.0"
+        "TARGET": "net10.0"
     },
     "portsAttributes": {
-        "8080": {
-            "label": "Weather API",
+        "17282": {
+            "label": "Memofee.AppHost",
             "onAutoForward": "notify"
         },
-        "8081": {
-            "label": "Weather Front End",
+        "7243": {
+            "label": "Memofee",
             "onAutoForward": "notify"
         }
     }
