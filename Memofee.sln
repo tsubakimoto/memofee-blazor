@@ -5,13 +5,13 @@ VisualStudioVersion = 18.0.11010.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memofee.AppHost", "Memofee.AppHost\Memofee.AppHost.csproj", "{D3D261E2-F4F8-4FA4-8CCD-C9D0F76A2C5A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memofee.ServiceDefaults", "Memofee.ServiceDefaults\Memofee.ServiceDefaults.csproj", "{EF5D43A6-7042-1579-6396-80FDCB824464}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memofee", "src\Memofee\Memofee.csproj", "{9621487C-CC9E-8D55-4341-45C25A67694B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memofee.Client", "src\Memofee.Client\Memofee.Client.csproj", "{0E1176AC-6743-81D5-02E1-231B7D9E1F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memofee.AppHost", "src\Memofee.AppHost\Memofee.AppHost.csproj", "{2F03F5FA-59ED-0ABB-F982-BB39958AA178}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memofee.ServiceDefaults", "src\Memofee.ServiceDefaults\Memofee.ServiceDefaults.csproj", "{D7770FD4-FD6C-8C29-ECA8-0FF7A70CD4CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D3D261E2-F4F8-4FA4-8CCD-C9D0F76A2C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3D261E2-F4F8-4FA4-8CCD-C9D0F76A2C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3D261E2-F4F8-4FA4-8CCD-C9D0F76A2C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3D261E2-F4F8-4FA4-8CCD-C9D0F76A2C5A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EF5D43A6-7042-1579-6396-80FDCB824464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF5D43A6-7042-1579-6396-80FDCB824464}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF5D43A6-7042-1579-6396-80FDCB824464}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF5D43A6-7042-1579-6396-80FDCB824464}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9621487C-CC9E-8D55-4341-45C25A67694B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9621487C-CC9E-8D55-4341-45C25A67694B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9621487C-CC9E-8D55-4341-45C25A67694B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +27,14 @@ Global
 		{0E1176AC-6743-81D5-02E1-231B7D9E1F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E1176AC-6743-81D5-02E1-231B7D9E1F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E1176AC-6743-81D5-02E1-231B7D9E1F87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F03F5FA-59ED-0ABB-F982-BB39958AA178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F03F5FA-59ED-0ABB-F982-BB39958AA178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F03F5FA-59ED-0ABB-F982-BB39958AA178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F03F5FA-59ED-0ABB-F982-BB39958AA178}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7770FD4-FD6C-8C29-ECA8-0FF7A70CD4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7770FD4-FD6C-8C29-ECA8-0FF7A70CD4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7770FD4-FD6C-8C29-ECA8-0FF7A70CD4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7770FD4-FD6C-8C29-ECA8-0FF7A70CD4CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +42,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9621487C-CC9E-8D55-4341-45C25A67694B} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{0E1176AC-6743-81D5-02E1-231B7D9E1F87} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{2F03F5FA-59ED-0ABB-F982-BB39958AA178} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{D7770FD4-FD6C-8C29-ECA8-0FF7A70CD4CC} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498464C5-535E-4D2C-A16A-B9871B2B217B}
